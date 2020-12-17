@@ -1,1 +1,173 @@
-/* Add CSS styling here */
+* {
+    padding: 10px;
+}
+
+.title {
+    background: rgb(45, 45, 182);
+}
+
+.title h1{
+    font-size: 40px;
+}
+
+.buttons {
+    display: flex; 
+    margin: 30px;
+    justify-content: flex-start;
+    
+}
+
+.buttons .item {
+    width: 50px;
+    height: 40px 0;
+    border: 1px solid black;
+    background: lightsalmon;
+    text-align: center;
+    
+}
+
+.item:hover {
+    background: rgb(236, 236, 17);
+    color: black}
+
+.middle {
+    background: rgb(129, 177, 137);
+}
+
+.middle .middle_header {
+    display: flex;
+}
+
+.middle_header .featured_pic {
+    zoom: 2;
+}
+
+.project_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.project_intro section {
+    padding: 70px 0;
+}
+
+.middle .middle_header .project_intro .item {
+    width: 50px;
+    height: 40px 0;
+    border: 1px solid black;
+    justify-content: flex-start;
+    background: lightsalmon;
+    text-align: center;
+    margin: 5px;
+}
+
+.middle .middle_header .project_intro .item:hover {
+    background: rgb(236, 236, 17);
+    color: black;
+}
+
+.middle .pictures{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+
+
+.bottom {
+    background: rgb(45, 45, 182);
+    display: flex;  
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.bottom .contact {
+    width: 50px;
+    height: 40px 0;
+    border: 1px solid black;
+    justify-content: flex-start;
+    background: lightsalmon;
+}
+
+.bottom .contact:hover {
+    background: rgb(236, 236, 17);
+    color: black}
+
+@media(max-width: 800px) {
+    .title{
+        margin: 0 auto;
+        background: orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 200%;
+    }
+    
+    .buttons {
+        display: flex; 
+        margin: 2%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .buttons .item {
+        width: 70%;
+        height: 40px 0;
+        border: 1px solid black;
+        background: lightsalmon;
+        text-align: center;
+        justify-content: center;
+        font-size: 62.5%;
+    }
+
+        .middle .middle_header {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .middle_header .featured_pic {
+            width: 80%;
+            height: 80%;
+        }
+
+        .project_intro {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .project_intro h2 a p{
+            justify-content: center; 
+            align-items: center;
+            margin: auto 0;
+        }
+        
+        .middle .pictures {
+            width: 150%;
+            flex-wrap: wrap;
+
+        }
+        
+    }
+
+
+@media(max-width: 500px) {
+    .title{
+        margin: 0 auto;
+        background: violet;
+    }
+    
+    .middle .pictures {
+        zoom: .66;
+        flex-wrap: wrap;
+    }
+    
+}
